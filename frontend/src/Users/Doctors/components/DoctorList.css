@@ -1,0 +1,83 @@
+/* Container for the carousel */
+.doctor-carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-header {
+    margin-bottom: 16px;
+  }
+  
+  .carousel-header h2 {
+    font-size: 24px;
+    color: #115e59;
+  }
+  
+  .carousel-body {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .doctor-card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    transition: transform 0.2s;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .doctor-card-content {
+    text-align: center;
+  }
+  
+  .doctor-name {
+    font-size: 18px;
+    color: #115e59;
+    margin: 10px 0;
+  }
+  
+  .doctor-specialization {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .doctor-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  .details-button, .contact-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .details-button:hover, .contact-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
